@@ -21,5 +21,5 @@ tmuxinator start dev
 
 Or manually:
 
-Back: `modd`
-Front: `npm --prefix ./assets_src run watch`
+- Back: `modd`
+- Front: `npm --prefix ./assets_src run watch`
