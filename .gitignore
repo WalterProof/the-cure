@@ -1,0 +1,11 @@
+# conf
+.tmuxinator.yml
+
+# app build
+app
+
+# front build
+dist
+
+# dependencies
+node_modules
