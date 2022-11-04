@@ -5,16 +5,27 @@ for instead showing them what they could get with that money.
 Let's begin with an average price of a pack of tobacco, converted to XTZ.
 Then fetching NFT of the day that the price of such a pack could buy.
 
-## Dev
+## Requirements
 
 You'll need to have these tools installed:
 
 - [modd](https://github.com/cortesi/modd)
-- [entr](https://github.com/clibs/entr) (optional)
+- [Go](https://go.dev/)
+- [Node](https://nodejs.org)
+
+## Install
+
+Install front dependencies:
+
+```sh
+npm --prefix ./assets i
+```
+
+## Dev
 
 Using tmuxinator:
 
-```
+```sh
 cp .tmuxinator.yml.dist .tmuxinator.yml
 tmuxinator start dev
 ```
@@ -22,4 +33,4 @@ tmuxinator start dev
 Or manually:
 
 - Back: `modd`
-- Front: `npm --prefix ./assets_src run watch`
+- Front: `npm --prefix ./assets run watch`

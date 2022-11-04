@@ -59,7 +59,7 @@ func (v *View) Render(w http.ResponseWriter, r *http.Request, data interface{}) 
 	var buf bytes.Buffer
 	if err := v.Template.ExecuteTemplate(&buf, v.Layout, vd); err != nil {
 		http.Error(w, err.Error(), http.StatusAccepted)
-		http.Error(w, "Something went wrong. If the problem persists, please email support@pezos.fi", http.StatusInternalServerError)
+		http.Error(w, "Something went wrong. If the problem persists, please email hey@sjehan.net", http.StatusInternalServerError)
 		return
 	}
 	io.Copy(w, &buf)

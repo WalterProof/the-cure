@@ -9,7 +9,7 @@ import (
 type Config struct {
 	Port            int    `json:"port"`
 	Env             string `json:"env"`
-	TezToolsBaseUrl string `json:"tezToolsBaseUrl"`
+	TezToolsBaseURL string `json:"tezToolsBaseUrl"`
 }
 
 func (c Config) IsProd() bool {

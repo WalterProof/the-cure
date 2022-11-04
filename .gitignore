@@ -3,6 +3,7 @@
 
 # app build
 app
+__debug_bin
 
 # front build
 dist

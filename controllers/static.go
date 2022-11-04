@@ -1,6 +1,6 @@
 package controllers
 
-import "pezos/views"
+import "tc/views"
 
 // NewStatic creates a new Static controller.
 func NewStatic() *Static {

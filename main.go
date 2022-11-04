@@ -4,16 +4,18 @@ import (
 	"flag"
 	"fmt"
 	"net/http"
-
-	"pezos/controllers"
-
-	"pezos/models"
+	"tc/controllers"
+	"tc/models"
 
 	"github.com/gorilla/mux"
 )
 
 func main() {
-	boolPtr := flag.Bool("prod", false, "Provide this flag in production. This ensures that a .config file is provided before the application starts.")
+	boolPtr := flag.Bool(
+		"prod",
+		false,
+		"Provide this flag in production. This ensures that a .config file is provided before the application starts.",
+	)
 	flag.Parse()
 
 	cfg := LoadConfig(*boolPtr)

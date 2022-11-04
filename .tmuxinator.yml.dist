@@ -5,6 +5,6 @@ windows:
   - editor:
       layout: main-vertical
       panes:
-        - vim
+        - lvim
         - modd
-        - fd -e js -e css --exclude node_modules --full-path './assets_src' | entr npm --prefix ./assets_src run watch
+        - npm --prefix ./assets run watch

@@ -3,9 +3,9 @@ package controllers
 import (
 	"net/http"
 
-	"pezos/views"
+	"tc/views"
 
-	"pezos/models"
+	"tc/models"
 )
 
 func NewHomepage(tt models.TezTools) *Homepage {
